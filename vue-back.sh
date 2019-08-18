@@ -1,7 +1,7 @@
 #!/bin/bash
 # 进入到服务端工作目录
 WORK_PATH='/usr/projects/vue-back'
-cd WORK_PATH
+cd $WORK_PATH
 echo '清除老代码'
 # 回退版本，历史区回退到暂存区
 git reset --hard origin/master
