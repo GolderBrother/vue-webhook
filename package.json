@@ -5,8 +5,7 @@
   "main": "webhook.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./webhook.js",
-    "pm2": "pm2 ./webhook.js --name webhook --watch",
+    "start": "pm2 start ./webhook.js --name webhook --watch",
     "stop": "pm2 stop webhook"
   },
   "keywords": [],

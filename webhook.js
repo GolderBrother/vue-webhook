@@ -2,7 +2,7 @@ const http = require('http');
 const server = http.createServer(function(req, res){
     console.log(req.method, req.url);
     if(req.url === '/') {
-        res.end('Hello webhook');
+        res.end('Hello webhook~~');
     }
     if(req.method === 'POST' && req.url === '/webhook') {
         let buffers = [];
@@ -10,7 +10,6 @@ const server = http.createServer(function(req, res){
             buffers.push(buffer);
         });
         req.on('end', function(){
-            // const body =
             console.log('buffers: %o', buffers); 
         });
         // 通知github接收成功
