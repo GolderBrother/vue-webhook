@@ -14,15 +14,15 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-function sendMail(message) {
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: '"1204788939" <1204788939@qq.com>', // 发送地址
-        to: '1204788939@qq.com', // 接收者，可以传入多个，以分号隔开
-        subject: '部署通知 ✔', // 主题
-        // text: 'Hello world?', // plain text body
-        html: message // 内容主体
-    };
+    function sendMail(message) {
+        // setup email data with unicode symbols
+        let mailOptions = {
+            from: '"1204788939" <1204788939@qq.com>', // 发送地址
+            to: '1204788939@qq.com', // 接收者，可以传入多个，以分号隔开
+            subject: '部署成功通知', // 主题
+            // text: 'Hello world?', // plain text body
+            html: message // 内容主体
+        };
 
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
