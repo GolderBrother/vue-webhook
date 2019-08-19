@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 # 进入到服务端工作目录
 WORK_PATH='/usr/projects/vue-back'
 cd $WORK_PATH
