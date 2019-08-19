@@ -10,7 +10,7 @@ git clean -f
 echo "拉取最新代码"
 git pull origin master
 echo "开始进行构建"
-# . 是当前目录下找Dockerfile文件进行构建
+# 创建新镜像, . 是当前目录下找Dockerfile文件进行构建
 # 注意：这边要加个版本号，不然默认就是latest,会有问题,下面的也要同步加
 docker build -t vue-back:1.0 .
 echo "停止旧容器并删除新容器"
